@@ -1,55 +1,58 @@
 # Phishing Email Analyzer
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=for-the-badge&logo=virustotal&logoColor=white)
+
 ## Overview
-<<<<<<< HEAD
 
-A Python-based tool that analyzes suspicious emails to detect phishing attempts by extracting URLs and checking them against VirusTotal's threat intelligence database.
+A Python-based modular tool that analyzes suspicious emails to detect phishing attempts by extracting URLs and checking them against VirusTotal's threat intelligence database.
 
-## Tools & Technologies
+## Project Structure
 
-=======
-A Python-based tool that analyzes suspicious emails to detect phishing attempts by extracting URLs and checking them against VirusTotal's threat intelligence database.
+phishing-analyzer/
 
-## Tools & Technologies
->>>>>>> 5cdeed36c028f117a5df73b460911613d35b0b69
-- Python 3
-- VirusTotal API (free tier)
-- Regex (URL extraction)
+├── src/
+
+│ ├── url_extractor.py — URL and sender extraction
+
+│ ├── vt_checker.py — VirusTotal API integration
+
+│ ├── domain_analyzer.py — Domain analysis
+
+│ └── report_generator.py — Report generation
+
+├── tests/ — Unit tests
+
+├── docs/usage.md — Usage guide
+
+├── main.py — Entry point
+
+├── requirements.txt — Dependencies
+
+└── config.example.py — API key template
 
 ## Features
-<<<<<<< HEAD
 
-=======
->>>>>>> 5cdeed36c028f117a5df73b460911613d35b0b69
 - Extracts all URLs from email text automatically
-- Checks each URL against 70+ antivirus engines via VirusTotal API
-- Analyzes sender email domain for suspicious keywords
-- Generates a clear threat report with SAFE/SUSPICIOUS/MALICIOUS verdict
+- Checks each URL against 50+ antivirus engines via VirusTotal API
+- Analyzes sender domain for suspicious keywords
+- Generates SAFE/SUSPICIOUS/MALICIOUS verdicts
+- Saves detailed scan reports as text files
 
-## How It Works
-<<<<<<< HEAD
+## Setup
 
-=======
->>>>>>> 5cdeed36c028f117a5df73b460911613d35b0b69
-1. Paste suspicious email text into the tool
-2. Tool extracts all URLs using regex pattern matching
-3. Each URL is submitted to VirusTotal for analysis
-4. Sender domain is checked against known phishing keywords
-5. A full threat report is generated with verdicts
+1. Install dependencies: pip install -r requirements.txt
+2. Copy config.example.py to config.py and add your VirusTotal API key
+3. Run: python main.py
 
 ## Skills Demonstrated
-<<<<<<< HEAD
 
-=======
->>>>>>> 5cdeed36c028f117a5df73b460911613d35b0b69
-- Python scripting and API integration
+- Python scripting and modular architecture
+- API integration (VirusTotal)
 - Threat intelligence and phishing detection
-- Email header analysis
+- Email and domain analysis
 - Security tool development
 
-## Screenshots
-<<<<<<< HEAD
+## Legal Disclaimer
 
-=======
->>>>>>> 5cdeed36c028f117a5df73b460911613d35b0b69
-<img width="500" height="476" alt="Analyzer" src="https://github.com/user-attachments/assets/4d1c8425-6185-4179-a15d-59ece054a13d" />
+This tool is for educational purposes only. Use responsibly.
