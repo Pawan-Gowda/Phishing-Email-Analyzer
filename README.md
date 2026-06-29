@@ -53,6 +53,11 @@ phishing-analyzer/
 - Email and domain analysis
 - Security tool development
 
+## Example Output
+![Tool Output](docs/output.png)
+
 ## Legal Disclaimer
 
 This tool is for educational purposes only. Use responsibly.
+
+
