@@ -54,7 +54,7 @@ phishing-analyzer/
 - Security tool development
 
 ## Example Output
-![Tool Output](docs/output.png)
+<img width="493" height="465" alt="output" src="https://github.com/user-attachments/assets/af7f7c3e-0031-4ab8-bafd-424b09bfdc4d" />
 
 ## Legal Disclaimer
 
